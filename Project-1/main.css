@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Figtree", serif;
+}
+
+main {
+  width: 100%;
+  background-color: #fdf9ec;
+  padding: 1em 0.7em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+main .navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .navbar .left h1 {
+  font-family: "Figtree", serif;
+  font-size: 6.5vw;
+  font-weight: 600;
+  color: #11193b;
+}
+main .navbar .right {
+  display: none;
+}
+main .navbar i {
+  font-size: 5vw;
+  font-weight: 700;
+}
+main .view_2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background-color: #f889e7;
+  padding: 2em 1em;
+}
+main .view_2 h2 {
+  font-size: 1.7em;
+  font-weight: 600;
+  line-height: 1;
+}
+main .view_2 p {
+  font-size: 1em;
+}
+main .view_2 .button {
+  margin-top: 3.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background-color: #10183a;
+  color: white;
+  padding: 1em 1.5em;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: 600;
+  transition: trasnsform 10s;
+}
+main .view_2 .button a {
+  text-decoration: none;
+  color: white;
+}
+main .view_2 .button:hover {
+  cursor: pointer;
+}
+main .view_2 .button:hover i {
+  transform: rotateZ(45deg);
+}
+main .view_2 .design {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  bottom: -60px;
+  right: -90px;
+  animation: rotate_design 30ms linear 1 both;
+}
+main .view_2 .design img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@keyframes rotate_design {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+main .banner_image {
+  width: 100%;
+}
+main .banner_image img {
+  width: 100%;
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 768px) {
+  main .navbar {
+    flex-direction: column-reverse;
+    gap: 3em;
+  }
+  main .navbar i {
+    display: none;
+  }
+  main .navbar .left h1 {
+    font-size: 11vw;
+  }
+  main .navbar .right {
+    display: flex;
+    gap: 1em;
+  }
+  main .navbar .right p {
+    font-family: "Figtree", serif;
+    padding: 0.5em 1em;
+    background-color: rgb(250, 235, 197);
+    border-radius: 20px;
+  }
+  main .view_2 {
+    padding: 2em 1em;
+  }
+  main .view_2 h2 {
+    font-size: 2.5em;
+    width: 70%;
+  }
+  main .view_2 p {
+    font-size: 1.3em;
+    width: 70%;
+  }
+  main .view_2 .design {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: -90px;
+    right: -70px;
+  }
+  main .view_2 .design img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    padding: 2em 1em;
+  }
+  main .navbar .right p {
+    font-size: 1.2em;
+    padding: 0.5em 1.4em;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  main .navbar .right :nth-child(1):hover {
+    cursor: pointer;
+    background-color: #feadd2;
+  }
+  main .navbar .right :nth-child(2):hover {
+    cursor: pointer;
+    background-color: #d8d800;
+  }
+  main .navbar .right :nth-child(3):hover {
+    cursor: pointer;
+    background-color: #ffdf2b;
+  }
+  main .navbar .right :nth-child(4):hover {
+    cursor: pointer;
+    background-color: #edbbf9;
+  }
+  main .navbar .right :nth-child(5):hover {
+    cursor: pointer;
+    background-color: #ffbe81;
+  }
+  main .navbar .left h1 {
+    font-size: 11.5vw;
+  }
+  main .view_2 {
+    padding: 4em 4em;
+  }
+  main .view_2 h2 {
+    font-size: 4rem;
+  }
+  main .view_2 .button {
+    font-size: 1.3em;
+  }
+  main .view_2 .design {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: -180px;
+    right: -80px;
+  }
+  main .view_2 .design img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
