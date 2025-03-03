@@ -88,7 +88,7 @@ main .view_2 .design {
   position: absolute;
   bottom: -60px;
   right: -90px;
-  animation: rotate_design 30ms linear 1 both;
+  animation: rotate_design 60ms linear 1 both;
 }
 main .view_2 .design img {
   width: 100%;
@@ -110,6 +110,32 @@ main .banner_image {
 main .banner_image img {
   width: 100%;
   border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .marque {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #d8d800;
+}
+main .marque .slide {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+}
+main .marque .slide .list_1 {
+  animation: marquee 5s linear infinite both;
+  display: inline-block;
+}
+main .marque .slide .list_1 .child {
+  display: inline-block;
+  padding: 1em 1em;
+  margin-right: 10px;
+}
+main .marque .slide .list_1 .child img {
+  height: 30px;
   -o-object-fit: cover;
      object-fit: cover;
 }

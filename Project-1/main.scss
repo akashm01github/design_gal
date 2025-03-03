@@ -111,7 +111,7 @@ main{
                 height: 100%;
                 object-fit: cover;
             }
-            animation: rotate_design 30ms linear  1 both;
+            animation: rotate_design 60ms linear  1 both;
         }
 
         @keyframes rotate_design {
@@ -136,6 +136,38 @@ main{
         }
     }
     
+
+   
+
+    .marque{
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: #d8d800;
+        .slide{
+            width: 100%;
+            overflow: hidden;
+            display: inline-block;
+            white-space: nowrap;
+
+            .list_1{
+                animation: marquee 5s linear  infinite both;
+                display: inline-block;
+                .child{
+                    display: inline-block;
+                    padding: 1em 1em;
+                    margin-right: 10px;
+                    img{
+                        height: 30px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+        }
+
+        
+    }
 
     @keyframes marquee {
         from{
